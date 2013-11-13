@@ -99,6 +99,8 @@ public class PMeta {
 		
 		m.addNodeAttributeCode("FreezeTime", PNode.Attribute.FREEZETIME);
 		m.addNodeAttributeCode("Time", PNode.Attribute.TIME);
+		m.addNodeAttributeCode("EXECTIME", PNode.Attribute.TIME);
+		m.addNodeAttributeCode("FREEZETIME", PNode.Attribute.FREEZETIME);
 		
 		
 		// Non-standard

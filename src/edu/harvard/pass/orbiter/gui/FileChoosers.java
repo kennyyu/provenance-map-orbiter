@@ -49,6 +49,7 @@ public class FileChoosers {
 	private static FileExtensionFilter documentFilter;
 	
 	private static FileExtensionFilter twigFilter;
+	private static FileExtensionFilter twigxmlFilter;
 	private static FileExtensionFilter opmFilter;
 	private static FileExtensionFilter rdfFilter;
 	private static FileExtensionFilter phyloxmlFilter;
@@ -73,6 +74,7 @@ public class FileChoosers {
 				+ Document.EXTENSION_COMPRESSED + ")", Document.EXTENSION, Document.EXTENSION_COMPRESSED);
 		
 		twigFilter = new FileExtensionFilter("PASS Twig File (*.twig, *.twig_dump)", "twig", "twig_dump");
+		twigxmlFilter = new FileExtensionFilter("PASS Twig XML File (*.twigxml)", "twigxml");
 		opmFilter = new FileExtensionFilter("OPM File (*.opm, *.n3, *.xml, *.rdf)", "opm", "n3", "xml", "rdf");
 		rdfFilter = new FileExtensionFilter("RDF File (*.n3, *.nt, *.ttl, *.xml, *.rdf)", "n3", "nt", "ttl", "xml", "rdf");
 		phyloxmlFilter = new FileExtensionFilter("PhyloXML file (*.phyloxml, *.xml)", "phyloxml", "xml");
@@ -100,6 +102,7 @@ public class FileChoosers {
 			fc.addChoosableFileFilter(ddgFilter);
 			fc.addChoosableFileFilter(twigFilter);
 			fc.addChoosableFileFilter(documentFilter);
+			fc.addChoosableFileFilter(twigxmlFilter);
 		}
 		else {
 			fc.addChoosableFileFilter(documentFilter);
@@ -108,6 +111,7 @@ public class FileChoosers {
 			fc.addChoosableFileFilter(opmFilter);
 			fc.addChoosableFileFilter(phyloxmlFilter);
 			fc.addChoosableFileFilter(rdfFilter);
+			fc.addChoosableFileFilter(twigxmlFilter);
 		}
 		
 		FileGroupFilter all = new FileGroupFilter(fc.getChoosableFileFilters());

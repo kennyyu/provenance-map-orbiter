@@ -56,6 +56,7 @@ public class SupportedParsers {
 	protected SupportedParsers() {
 		
 		parsers = new Vector<Parser>();
+		parsers.add(new TwigXMLParser());
 		parsers.add(new TwigParser());
 		parsers.add(new DDGParser());
 		parsers.add(new PhyloXMLParser());

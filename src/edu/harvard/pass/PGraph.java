@@ -88,7 +88,7 @@ public class PGraph extends Graph<PNode, PEdge, PSummaryNode, PGraph> implements
 	
 	public static final String DOM_ELEMENT = "provenance-graph";
 	
-	private static final boolean ENABLE_FORKPARENT_FIX = false;
+	private static final boolean ENABLE_FORKPARENT_FIX = true;
 	
 	protected HashMap<Integer, PObject> fdToObject;
 	protected HashMap<String, PNode> idToNode;

@@ -1,0 +1,25 @@
+syntax: glob
+*~
+.directory
+.DS_Store
+.classpath
+.project
+.DS_Store
+*.bbprojectd
+*.class
+*.swp
+doc/javadoc/**
+syntax: regexp
+^CVS/.*$
+/CVS/
+^\.externalToolBuilders/.*
+^\.settings/.*
+^build/.*
+^bin/.*
+^dist/.*
+^doc/javadoc/.*
+.settings
+.project
+.classpath
+.hg
+dist
